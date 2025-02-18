@@ -1,30 +1,18 @@
 @extends('home.base')
 @section('content')
-    <!--Page Header Start-->
-    <section class="page-header">
-        <div class="page-header__bg" style="background-image: url({{asset('home/images/backgrounds/page-header-bg.jpg')}}');">
-        </div>
-        <div class="page-header__shape-one float-bob-x-2"></div>
-        <div class="page-header__shape-2 float-bob-y">
-            <img src="{{asset('home/images/shapes/page-header-shape-2.png')}}" alt="">
-        </div>
-        <div class="page-header__shape-3 float-bob-x">
-            <img src="{{asset('home/images/shapes/page-header-shape-3.png')}}" alt="">
-        </div>
-        <div class="page-header__shape-4 float-bob-y">
-            <img src="{{asset('home/images/shapes/page-header-shape-4.png')}}" alt="">
-        </div>
+    <!-- Start Page-title Area -->
+    <div class="page-title-area bg-black">
         <div class="container">
-            <div class="page-header__inner text-left">
-                <ul class="thm-breadcrumb list-unstyled">
+            <div class="page-title-content">
+                <h2>{{$pageName}}</h2>
+                <ul>
                     <li><a href="{{url('/')}}">Home</a></li>
                     <li>{{$pageName}}</li>
                 </ul>
-                <h2>{{$pageName}}</h2>
             </div>
         </div>
-    </section>
-    <!--Page Header End-->
+    </div>
+    <!-- End Page-title Area -->
 
 
     <!-- END SECTION TEAM -->
@@ -189,7 +177,7 @@
                             <div id="collapse-2-7" class="collapse" aria-labelledby="heading-2-7"
                                  data-parent="#accordion-2">
                                 <div class="card-body">
-                                    <p>No you cannot have more than one account, only VIP investors are allowed to do so</p>
+                                    <p>No you cannot have more than one account only investors on the vip plan are allowed to do so</p>
                                 </div>
                             </div>
                         </div>
@@ -207,8 +195,7 @@
                             <div id="collapse-2-8" class="collapse" aria-labelledby="heading-2-8"
                                  data-parent="#accordion-2">
                                 <div class="card-body">
-                                    <p>Yes we are officially and properly registered with Canada.
-                                        Our company registration number is {{ env('COMPANY_LICENSE') }}   and registered with the name {{$siteName}}</p>
+                                    <p>Yes we are officially and properly registered with the United State . our company registration number is USFDAISO34847676   and registered with the name {{$siteName}}</p>
                                 </div>
                             </div>
                         </div>
@@ -226,7 +213,7 @@
                             <div id="collapse-2-9" class="collapse" aria-labelledby="heading-2-9"
                                  data-parent="#accordion-2">
                                 <div class="card-body">
-                                    <p>No, except you are a VIP Investor</p>
+                                    <p>Yes, you can have multiple accounts</p>
                                 </div>
                             </div>
                         </div>
@@ -244,7 +231,7 @@
                             <div id="collapse-2-10" class="collapse" aria-labelledby="heading-2-10"
                                  data-parent="#accordion-2">
                                 <div class="card-body">
-                                    <p>You can make as many deposit as you want on any of our investment plans.</p>
+                                    <p>You can make as many deposit as you want on any of our investment plans except theHERCULES ARBITRAGE PLAN where you can only invest two times. And you can only withdraw once in the HERCULES ARBITRAGE PLAN.</p>
                                 </div>
                             </div>
                         </div>
